@@ -1,5 +1,11 @@
 .header {
     padding: 18px 0;
+
+    &__nav {
+        @include media(1140) {
+            display: none;
+        }
+    }
 }
 
 .header__container {
@@ -18,14 +24,31 @@
 
 .nav {
     &__list {
-        margin: 0 100px 0 0;
+        &_dir {
+            &_row {
+                display: flex;
+                margin: 0 100px 0 0;
+            }
+
+            &_col {
+                flex-direction: column;
+            }
+        }
     }
 
     &__item {
-        display: inline-block;
+        &_dir {
+            &_row {
+                &:not(:last-child) {
+                    margin: 0 70px 0 0;
+                }
+            }
 
-        &:not(:last-child) {
-            margin: 0 70px 0 0;
+            &_col {
+                &:not(:first-child) {
+                    margin: 60px 0;
+                }
+            }
         }
     }
 
@@ -34,13 +57,16 @@
         line-height: 24px;
         transition: all 0.2s;
 
+        &_color {
+            &_white {
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+
         &:hover {
             color: $mainColor;
         }
-    }
-
-    @include media(1140) {
-        display: none;
     }
 }
 

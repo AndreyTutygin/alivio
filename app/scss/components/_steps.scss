@@ -1,0 +1,30 @@
+.steps {
+    margin: 212px 0 0;
+
+    &__text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__overhead {
+        left: 0;
+        top: -33px;
+    }
+
+    &__title {
+        max-width: 580px;
+    }
+
+    &__parag {
+        max-width: 670px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
+
+.overhead {
+    position: absolute;
+    font-size: 24px;
+}

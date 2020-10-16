@@ -1,2 +1,22 @@
-header
-    p Header
+header.header
+    .container.header__container
+        a.logo(href="#")
+            svg.logo__svg
+                use(xlink:href="img/sprite.svg#logo")
+
+        nav.nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#") Why Alivio
+                li.nav__item
+                    a.nav__link(href="#") Solution
+                li.nav__item
+                    a.nav__link(href="#") Community
+                li.nav__item
+                    a.nav__link(href="#") Pricing
+
+        ul.auth-list
+            li.auth-list__item
+                a.auth-list__link(href="#") Sign in
+            li.auth-list__item
+                a.btn.btn_size_s(href="#") Start Trial

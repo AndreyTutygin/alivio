@@ -10,7 +10,18 @@ html {
 
 body {
     margin: 0;
-    font-family: "asd", sans-serif;
+    font-family: $mainFont;
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1369px;
+}
+
+.site-container {
+    overflow: hidden;
 }
 
 img {
@@ -49,10 +60,6 @@ ol {
     left: -9999px !important; // stylelint-disable-line declaration-no-important
 }
 
-.site-container {
-    overflow: hidden;
-}
-
 .is-hidden {
     display: none !important; // stylelint-disable-line declaration-no-important
 }
@@ -69,12 +76,6 @@ ol {
     border: none;
     background: transparent;
     cursor: pointer;
-}
-
-.container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1200px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

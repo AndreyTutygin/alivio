@@ -10,15 +10,24 @@ html {
 
 body {
     margin: 0;
+    min-width: 320px;
     font-family: $mainFont;
     font-size: 20px;
     color: $colorParag;
+
+    @include media(650) {
+        font-size: 16px;
+    }
 }
 
 .container {
     margin: 0 auto;
     padding: 0 30px;
     max-width: 1429px;
+
+    @include media(650) {
+        padding: 0 15px;
+    }
 }
 
 .site-container {

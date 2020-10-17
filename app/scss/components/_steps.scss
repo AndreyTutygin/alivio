@@ -1,11 +1,16 @@
 .steps {
-    margin: 212px 0 0;
+    padding: 210px 0 30px;
 
     &__text {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include media(1350) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__overhead {
@@ -21,10 +26,155 @@
         max-width: 670px;
         font-weight: 500;
         line-height: 30px;
+
+        @include media(1350) {
+            margin: 20px 0 0;
+        }
+    }
+
+    @include media(1350) {
+        padding: 110px 0 30px;
     }
 }
 
 .overhead {
     position: absolute;
     font-size: 24px;
+
+    @include media(1350) {
+        position: static;
+    }
+}
+
+.cards {
+    margin: 195px 0 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(650) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+        max-width: 390px;
+
+        &:nth-child(2) {
+            margin: 290px 50px 0;
+
+            @include media(1350) {
+                margin: 180px 50px 0;
+            }
+
+            @include media(1140) {
+                margin: 0 50px;
+            }
+
+            @include media(650) {
+                margin: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin: 50px 0 0;
+
+            @include media(1140) {
+                margin: 0;
+            }
+        }
+
+        @include media(1140) {
+            max-width: 250px;
+            text-align: center;
+        }
+
+        @include media(650) {
+            max-width: 100%;
+            text-align: left;
+
+            &:not(:first-child) {
+                margin: 80px 0 0;
+            }
+        }
+    }
+
+    &__num {
+        position: absolute;
+        left: 0;
+        top: -111px;
+        font-family: $secondFont;
+        font-size: 150px;
+        text-align: center;
+        color: rgba($mainColor, 0.2);
+
+        @include media(1140) {
+            top: -70px;
+            font-size: 100px;
+        }
+    }
+
+    &__title {
+        font-family: $secondFont;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #000;
+
+        @include media(650) {
+            text-align: left;
+        }
+    }
+
+    &__parag {
+        margin: 65px 0 0;
+        line-height: 30px;
+
+        @include media(1140) {
+            margin: 30px 0 0;
+        }
+
+        @include media(650) {
+            margin: 10px 0 0;
+        }
+    }
+
+    &__img {
+        margin: 53px 0 0;
+        border-radius: 12px;
+        height: 492px;
+        max-width: 390px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_num {
+            &_01 {
+                background-image: url("../img/cards__img1.jpg");
+            }
+
+            &_02 {
+                background-image: url("../img/cards__img2.jpg");
+            }
+
+            &_03 {
+                background-image: url("../img/cards__img3.jpg");
+            }
+        }
+
+        @include media(1350) {
+            height: 300px;
+        }
+
+        @include media(1140) {
+            display: none;
+        }
+    }
+
+    @include media(1350) {
+        margin: 120px 0 0;
+    }
 }

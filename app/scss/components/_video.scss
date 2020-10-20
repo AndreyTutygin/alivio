@@ -41,8 +41,12 @@
     }
 
     @include media(1140) {
-        padding: 110px 0 30px;
+        padding: 100px 0;
         text-align: center;
+    }
+
+    @include media(650) {
+        padding: 50px 0;
     }
 }
 

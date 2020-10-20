@@ -13,4 +13,12 @@
         font-weight: 700;
         font-size: 40px;
     }
+
+    @include media(1140) {
+        padding: 100px 0;
+    }
+
+    @include media(650) {
+        padding: 50px 0;
+    }
 }

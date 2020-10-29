@@ -1,17 +1,28 @@
 .header {
+    position: fixed;
+    z-index: 200;
     padding: 18px 0;
+    width: 100%;
+    background-color: #fff;
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__nav {
         @include media(1140) {
             display: none;
         }
     }
-}
 
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    &__burger {
+        @include media(1140) {
+            display: block;
+        }
+    }
 }
 
 .logo {

@@ -7,6 +7,12 @@
         align-items: center;
         justify-content: space-between;
 
+        &_anim {
+            opacity: 0;
+            transform: translate(0, -130%);
+            transition: 0.8s;
+        }
+
         @include media(1350) {
             flex-direction: column;
             text-align: center;

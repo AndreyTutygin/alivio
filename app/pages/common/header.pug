@@ -1,6 +1,6 @@
 header.header
     .container.header__container
-        a.logo(href="#")
+        a.logo(href="#" aria-label="logo")
             svg.logo__svg
                 use(xlink:href="img/sprite.svg#logo")
 
@@ -20,3 +20,24 @@ header.header
                 a.auth-list__link(href="#") Sign in
             li.auth-list__item
                 a.btn.btn_size_s(href="#") Start Trial
+
+        .burger.header__burger
+            span.burger__line
+            span.burger__line
+            span.burger__line
+            span.burger__line
+
+        nav.m-nav
+            ul.m-nav__list
+                li.m-nav__item
+                    a.m-nav__link(href="#") Why Alivio
+                li.m-nav__item
+                    a.m-nav__link(href="#") Solution
+                li.m-nav__item
+                    a.m-nav__link(href="#") Community
+                li.m-nav__item
+                    a.m-nav__link(href="#") Pricing
+                li.m-nav__item
+                    a.m-nav__link(href="#") Sign in
+                li.m-nav__item
+                    a.btn.btn_size_s.m-nav__btn.m-nav__link(href="#") Start Trial
